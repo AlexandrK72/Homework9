@@ -5,6 +5,11 @@
 Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if(number < 1)
+{
+    Console.WriteLine("Ошибка ввода");
+    return;
+}
 ReverseNumbers(number);
 
 void ReverseNumbers(int num)
