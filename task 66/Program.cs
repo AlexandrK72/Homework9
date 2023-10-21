@@ -16,7 +16,12 @@ Console.WriteLine("Введите натуральное число M: ");
 int numberFirst = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите натуральное число N: ");
 int numberSecond = Convert.ToInt32(Console.ReadLine());
-if(numberFirst < numberSecond)
+if (numberFirst < 1 && numberSecond < 1)
+{
+    Console.WriteLine("Ошибка ввода. Введите натуральные числа!");
+    return;
+}
+if (numberFirst < numberSecond)
 {
     numberM = numberFirst;
     numberN = numberSecond;

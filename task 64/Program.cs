@@ -7,7 +7,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if(number < 1)
 {
-    Console.WriteLine("Ошибка ввода");
+    Console.WriteLine("Ошибка вводаю Введите натуральное число!");
     return;
 }
 ReverseNumbers(number);
