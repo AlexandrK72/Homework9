@@ -12,9 +12,9 @@ int SumDidgit(int numM, int numN)
 }
 int numberM = 0;
 int numberN = 0;
-Console.WriteLine("Введите натуральное число M: ");
+Console.Write("Введите натуральное число M: ");
 int numberFirst = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите натуральное число N: ");
+Console.Write("Введите натуральное число N: ");
 int numberSecond = Convert.ToInt32(Console.ReadLine());
 if (numberFirst < 1 && numberSecond < 1)
 {
@@ -32,4 +32,4 @@ else
     numberM = numberSecond;
 }
 int result = SumDidgit(numberM, numberN);
-Console.Write($"M = {numberM}, N = {numberN} -> {result}");
+Console.Write($"M = {numberM}; N = {numberN} -> {result}");
